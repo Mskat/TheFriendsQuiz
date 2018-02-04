@@ -28,10 +28,10 @@
             android:text="1. Where does 'Gunther' work?" />
 
         <EditText
-            android:id="@+id/album_description_view"
+            android:id="@+id/place_of_work"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="Name of the coffee shop"
             android:textSize="13sp"
             android:inputType="textMultiLine" />
 
@@ -41,6 +41,7 @@
             android:text="2. What types of an animal do Joey and Chandler own?" />
 
         <CheckBox
+            android:id="@+id/chick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chick"
@@ -48,6 +49,7 @@
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
+            android:id="@+id/dog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dog"
@@ -55,6 +57,7 @@
             android:textAppearance="?android:textAppearanceMedium"  />
 
         <CheckBox
+            android:id="@+id/duck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Duck"
@@ -62,6 +65,7 @@
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
+            android:id="@+id/monkey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Monkey"
@@ -84,6 +88,7 @@
                 android:textSize="13sp"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
+                android:id="@+id/answer_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"
@@ -97,18 +102,20 @@
             android:text="4. Where is Chandler forced to work after falling asleep in a meeting?" />
 
         <EditText
+            android:id="@+id/name_of_town"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Town"
+            android:hint="Name of the town"
             android:textSize="13sp"
             android:inputType="textMultiLine" />
-        
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="5. Which of The Friends have worked in the coffee shop?" />
 
         <CheckBox
+            android:id="@+id/chandler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chandler"
@@ -116,6 +123,7 @@
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
+            android:id="@+id/phoebe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Phoebe"
@@ -123,6 +131,7 @@
             android:textAppearance="?android:textAppearanceMedium"  />
 
         <CheckBox
+            android:id="@+id/rachel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rachel"
@@ -130,6 +139,7 @@
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
+            android:id="@+id/joey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Joey"
@@ -158,6 +168,7 @@
                 android:textSize="13sp"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
+                android:id="@+id/answer_muriel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Muriel"
@@ -166,10 +177,10 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Result"
+            android:onClick="result"
             android:textAppearance="?android:textAppearanceMedium" />
 
     </LinearLayout>
