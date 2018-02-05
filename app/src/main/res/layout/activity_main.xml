@@ -3,280 +3,313 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mskatz.friendsquiz.MainActivity" >
+    tools:context="com.example.mskatz.friendsquiz.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:focusableInTouchMode="true">
+        android:background="#cdcdcd"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="36sp"
-            android:layout_margin="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="How well do you know The Friends?" />
+            android:gravity="center"
+            android:text="How well do you know The Friends?"
+            android:textColor="#660A3B"
+            android:textSize="36sp" />
 
         <ImageView
             android:id="@+id/photo_image_view"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:src="@drawable/friends" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="1. Where does 'Gunther' work?" />
+            android:text="1. Where does 'Gunther' work?"
+            android:textColor="#4f4f4f"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/place_of_work"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name of the coffee shop"
-            android:fontFamily="sans-serif-smallcaps"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:inputType="textMultiLine" />
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="Name of the coffee shop"
+            android:inputType="textMultiLine"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="2. What types of an animal do Joey and Chandler own?" />
+            android:text="2. What types of an animal do Joey and Chandler own?"
+            android:textColor="#4f4f4f"
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/chick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="Chick"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:paddingLeft="2dp"
             android:layout_marginTop="8dp"
-            android:textSize="16sp"
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="2dp"
+            android:text="Chick"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/dog"
-            android:fontFamily="sans-serif-smallcaps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dog"
-            android:paddingLeft="2dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:textSize="16sp"
-            android:textAppearance="?android:textAppearanceMedium"  />
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="2dp"
+            android:text="Dog"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/duck"
-            android:fontFamily="sans-serif-smallcaps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Duck"
-            android:paddingLeft="2dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:textSize="16sp"
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="2dp"
+            android:text="Duck"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/monkey"
-            android:fontFamily="sans-serif-smallcaps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Monkey"
-            android:paddingLeft="2dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:textSize="16sp"
-            android:textAppearance="?android:textAppearanceMedium"  />
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="2dp"
+            android:text="Monkey"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:textSize="20sp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="3. Did Phoebe carry for her brother two babies?" />
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="3. Did Phoebe carry for her brother two babies?"
+            android:textColor="#4f4f4f"
+            android:textSize="20sp" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
+            android:layout_marginTop="8dp"
             android:orientation="vertical">
+
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Yes"
                 android:fontFamily="sans-serif-smallcaps"
-                android:textSize="16sp"
                 android:paddingLeft="2dp"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="Yes"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#4f4f4f"
+                android:textSize="16sp" />
+
             <RadioButton
                 android:id="@+id/answer_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
-                android:text="No"
                 android:paddingLeft="2dp"
-                android:textSize="16sp"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="No"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#4f4f4f"
+                android:textSize="16sp" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="4. Where is Chandler forced to work after falling asleep in a meeting?" />
+            android:text="4. Where is Chandler forced to work after falling asleep in a meeting?"
+            android:textColor="#4f4f4f"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/name_of_town"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name of the town"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:inputType="textMultiLine" />
+            android:hint="Name of the town"
+            android:inputType="textMultiLine"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="5. Which of The Friends have worked in the coffee shop?" />
+            android:text="5. Which of The Friends have worked in the coffee shop?"
+            android:textColor="#4f4f4f"
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/chandler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chandler"
-            android:paddingLeft="2dp"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:textSize="16sp"
+            android:layout_marginTop="8dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:paddingLeft="2dp"
+            android:text="Chandler"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/phoebe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phoebe"
-            android:paddingLeft="2dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:textSize="16sp"
-            android:textAppearance="?android:textAppearanceMedium"  />
+            android:paddingLeft="2dp"
+            android:text="Phoebe"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/rachel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rachel"
-            android:paddingLeft="2dp"
-            android:textSize="16sp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:paddingLeft="2dp"
+            android:text="Rachel"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/joey"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Joey"
-            android:paddingLeft="2dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:textSize="16sp"
             android:fontFamily="sans-serif-smallcaps"
-            android:textAppearance="?android:textAppearanceMedium"  />
+            android:paddingLeft="2dp"
+            android:text="Joey"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="6. What is Chandler's middle name?" />
+            android:text="6. What is Chandler's middle name?"
+            android:textColor="#4f4f4f"
+            android:textSize="20sp" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
+            android:layout_marginTop="8dp"
             android:orientation="vertical">
+
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="2dp"
                 android:text="Michael"
-                android:textSize="16sp"
-                android:paddingLeft="2dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#4f4f4f"
+                android:textSize="16sp" />
+
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Matt"
-                android:textSize="16sp"
-                android:paddingLeft="2dp"
                 android:fontFamily="sans-serif-smallcaps"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:paddingLeft="2dp"
+                android:text="Matt"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#4f4f4f"
+                android:textSize="16sp" />
+
             <RadioButton
                 android:id="@+id/answer_muriel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Muriel"
-                android:textSize="16sp"
-                android:paddingLeft="2dp"
                 android:fontFamily="sans-serif-smallcaps"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:paddingLeft="2dp"
+                android:text="Muriel"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#4f4f4f"
+                android:textSize="16sp" />
         </RadioGroup>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Result"
-            android:textSize="20sp"
-            android:layout_margin="16dp"
+            android:layout_margin="35dp"
+            android:background="#590632"
             android:fontFamily="sans-serif-smallcaps"
             android:onClick="result"
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:text="Result"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#cdcdcd"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
