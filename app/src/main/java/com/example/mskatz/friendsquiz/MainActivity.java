@@ -2,7 +2,6 @@ package com.example.mskatz.friendsquiz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -11,11 +10,9 @@ import android.widget.Toast;
 
 import static android.icu.lang.UCharacter.toUpperCase;
 
-
 public class MainActivity extends AppCompatActivity {
 
     int score =0;
-    int answer = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,44 +20,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void result(View view){
-        if(toUpperCase(firstAnswer()).equals("CENTRAL PERK")){
-            addPoint(score);
-            //Log.i("MainActivity.com", String.valueOf(score));
-        }
-        if(secondAnswer()){
+    public void result(View view) {
+        if (toUpperCase(firstAnswer()).equals("CENTRAL PERK")) {
             addPoint(score);
         }
-        if(thirdAnswer()){
+        if (secondAnswer()) {
             addPoint(score);
         }
-        if(toUpperCase(fourthAnswer()).equals("TULSA")){
-            addPoint(score);
-            //Log.i("MainActivity.com", String.valueOf(score));
-        }
-        if(fifthAnswer()){
+        if (thirdAnswer()) {
             addPoint(score);
         }
-        if(sixthAnswer()){
+        if (toUpperCase(fourthAnswer()).equals("TULSA")) {
             addPoint(score);
         }
-        Log.i("MainActivity.com", "score " + String.valueOf(score));
-        Log.i("MainActivity.com", "answer " + String.valueOf(answer));
-        if(answer==6){
-            Toast.makeText(this, "Your score is " + String.valueOf(score), Toast.LENGTH_SHORT).show();
-        } else Toast.makeText(this, "You didn't answer for all of the questions! ", Toast.LENGTH_SHORT).show();
+        if (fifthAnswer()) {
+            addPoint(score);
+        }
+        if (sixthAnswer()) {
+            addPoint(score);
+        }
+        if(score==6){
+            Toast.makeText(this, "Your score is " + String.valueOf(score) + "\nCongratulations!", Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(this, "Your score is " + String.valueOf(score) + "\nNext time you will be better :)", Toast.LENGTH_SHORT).show();
 
         score = 0;
-        answer = 0;
     }
 
     public void addPoint(int point){
         score += 1;
-        countAnswer(answer);
-    }
-
-    public void countAnswer(int count){
-        answer += 1;
     }
 
     private String firstAnswer(){
@@ -123,4 +110,6 @@ public class MainActivity extends AppCompatActivity {
         return trueOrFalse;
     }
 }
+
+
 
