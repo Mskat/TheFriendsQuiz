@@ -8,23 +8,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="How well do you know The Friends?" />
 
         <ImageView
             android:id="@+id/photo_image_view"
             android:layout_width="wrap_content"
-            android:layout_height="192dp"
+            android:layout_height="180dp"
             android:scaleType="fitStart"
             android:src="@drawable/friends" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="1. Where does 'Gunther' work?" />
 
         <EditText
@@ -32,73 +37,86 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name of the coffee shop"
-            android:textSize="13sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="16sp"
             android:inputType="textMultiLine" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="2. What types of an animal do Joey and Chandler own?" />
 
         <CheckBox
             android:id="@+id/chick"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="Chick"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/dog"
-            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dog"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:textAppearance="?android:textAppearanceMedium"  />
 
         <CheckBox
             android:id="@+id/duck"
-            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Duck"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/monkey"
-            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Monkey"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:textAppearance="?android:textAppearanceMedium"  />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
             android:text="3. Did Phoebe carry for her brother two babies?" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <RadioButton
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Yes"
-                android:textSize="13sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
                 android:id="@+id/answer_no"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="No"
-                android:textSize="13sp"
+                android:textSize="16sp"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="4. Where is Chandler forced to work after falling asleep in a meeting?" />
 
         <EditText
@@ -106,80 +124,94 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name of the town"
-            android:textSize="13sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:inputType="textMultiLine" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="5. Which of The Friends have worked in the coffee shop?" />
 
         <CheckBox
             android:id="@+id/chandler"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Chandler"
-            android:textSize="13sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/phoebe"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phoebe"
-            android:textSize="13sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="16sp"
             android:textAppearance="?android:textAppearanceMedium"  />
 
         <CheckBox
             android:id="@+id/rachel"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rachel"
-            android:textSize="13sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/joey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Joey"
-            android:textSize="13sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:textAppearance="?android:textAppearanceMedium"  />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="6. What is Chandler's middle name?" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <RadioButton
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Michael"
-                android:textSize="13sp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Matt"
-                android:textSize="13sp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
                 android:id="@+id/answer_muriel"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Muriel"
-                android:textSize="13sp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Result"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
             android:onClick="result"
             android:textAppearance="?android:textAppearanceMedium" />
 
