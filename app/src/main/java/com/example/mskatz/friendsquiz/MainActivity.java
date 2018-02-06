@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void result(View view) {
-        if (toUpperCase(firstAnswer()).equals("CENTRAL PERK")) {
+        if (toUpperCase(firstAnswer()).equals(getString(R.string.central_perk))) {
             addPoint(score);
         }
         if (secondAnswer()) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         if (thirdAnswer()) {
             addPoint(score);
         }
-        if (toUpperCase(fourthAnswer()).equals("TULSA")) {
+        if (toUpperCase(fourthAnswer()).equals(getString(R.string.tulsa))) {
             addPoint(score);
         }
         if (fifthAnswer()) {
@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
             addPoint(score);
         }
         if (score == 6) {
-            Toast.makeText(this, "Your score is " + String.valueOf(score) + "\nCongratulations!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.score) + " " + String.valueOf(score) + "\n" + getString(R.string.congratulations), Toast.LENGTH_SHORT).show();
         } else
-            Toast.makeText(this, "Your score is " + String.valueOf(score) + "\nNext time you will be better :)", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.score) + " " + String.valueOf(score) + "\n" + getString(R.string.better), Toast.LENGTH_SHORT).show();
 
         score = 0;
     }
@@ -53,8 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String firstAnswer() {
         EditText editText = findViewById(R.id.place_of_work);
-        String placeOfWork = editText.getText().toString();
-        return placeOfWork;
+        return editText.getText().toString();
     }
 
     private boolean secondAnswer() {
@@ -64,10 +63,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox stateDuck = findViewById(R.id.duck);
         CheckBox stateMonkey = findViewById(R.id.monkey);
         if (stateDuck.isChecked() && stateChick.isChecked()) {
-            trueOrFalse = true;
-            if (stateDog.isChecked() || stateMonkey.isChecked()) {
-                trueOrFalse = false;
-            }
+            trueOrFalse = !(stateDog.isChecked() || stateMonkey.isChecked());
         }
         return trueOrFalse;
     }
@@ -83,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
 
     private String fourthAnswer() {
         EditText editText = findViewById(R.id.name_of_town);
-        String nameOfTown = editText.getText().toString();
-        return nameOfTown;
+        return editText.getText().toString();
+
     }
 
     private boolean fifthAnswer() {
@@ -94,10 +90,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox stateRachel = findViewById(R.id.rachel);
         CheckBox stateJoey = findViewById(R.id.joey);
         if (stateRachel.isChecked() && stateJoey.isChecked()) {
-            trueOrFalse = true;
-            if (stateChandler.isChecked() || statePhoebe.isChecked()) {
-                trueOrFalse = false;
-            }
+            trueOrFalse = !(stateChandler.isChecked() || statePhoebe.isChecked());
         }
         return trueOrFalse;
     }

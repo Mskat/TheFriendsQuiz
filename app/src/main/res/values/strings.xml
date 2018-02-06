@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Friends Quiz</string>
+    <string name="how_well_do_you_know_the_friends">How well do you know The Friends?</string>
+    <string name="_1_where_does_gunther_work">1. Where does \'Gunther\' work?</string>
+    <string name="name_of_the_coffee_shop">Name of the coffee shop</string>
+    <string name="_2_what_types_of_an_animal_do_joey_and_chandler_own">2. What types of an animal do Joey and Chandler own?</string>
+    <string name="chick">Chick</string>
+    <string name="dog">Dog</string>
+    <string name="duck">Duck</string>
+    <string name="monkey">Monkey</string>
+    <string name="_3_did_phoebe_carry_for_her_brother_two_babies">3. Did Phoebe carry for her brother two babies?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="_4_where_is_chandler_forced_to_work_after_falling_asleep_in_a_meeting">4. Where is Chandler forced to work after falling asleep in a meeting?</string>
+    <string name="name_of_the_town">Name of the town</string>
+    <string name="_5_which_of_the_friends_have_worked_in_the_coffee_shop">5. Which of The Friends have worked in the coffee shop?</string>
+    <string name="chandler">Chandler</string>
+    <string name="phoebe">Phoebe</string>
+    <string name="rachel">Rachel</string>
+    <string name="joey">Joey</string>
+    <string name="_6_what_is_chandler_s_middle_name">6. What is Chandler\'s middle name?</string>
+    <string name="michael">Michael</string>
+    <string name="matt">Matt</string>
+    <string name="muriel">Muriel</string>
+    <string name="result">Result</string>
+    <string name="central_perk">CENTRAL PERK</string>
+    <string name="tulsa">TULSA</string>
+    <string name="score">Your score is</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="better">Next time you will be better :)</string>
 </resources>
