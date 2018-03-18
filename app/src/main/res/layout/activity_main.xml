@@ -8,307 +8,307 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#cdcdcd"
+        android:background="@color/background_color"
         android:focusableInTouchMode="true"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/margin_size_8dp"
+            android:layout_marginRight="@dimen/margin_size_8dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
             android:fontFamily="sans-serif-smallcaps"
             android:gravity="center"
             android:text="@string/how_well_do_you_know_the_friends"
-            android:textColor="#660A3B"
-            android:textSize="36sp" />
+            android:textColor="@color/header_text_color"
+            android:textSize="@dimen/text_size_36sp" />
 
         <ImageView
             android:id="@+id/photo_image_view"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/margin_size_10dp"
             android:src="@drawable/friends" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/margin_size_16dp"
+            android:layout_marginRight="@dimen/margin_size_16dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/_1_where_does_gunther_work"
-            android:textColor="#4f4f4f"
-            android:textSize="20sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_20sp" />
 
         <EditText
             android:id="@+id/place_of_work"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
             android:fontFamily="sans-serif-smallcaps"
             android:hint="@string/name_of_the_coffee_shop"
             android:inputType="textMultiLine"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/margin_size_16dp"
+            android:layout_marginRight="@dimen/margin_size_16dp"
+            android:layout_marginTop="@dimen/margin_size_16dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/_2_what_types_of_an_animal_do_joey_and_chandler_own"
-            android:textColor="#4f4f4f"
-            android:textSize="20sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_20sp" />
 
         <CheckBox
             android:id="@+id/chick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingStart="@dimen/padding_size_2dp"
             android:text="@string/chick"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <CheckBox
             android:id="@+id/dog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingStart="@dimen/padding_size_2dp"
             android:text="@string/dog"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <CheckBox
             android:id="@+id/duck"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingStart="@dimen/padding_size_2dp"
             android:text="@string/duck"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <CheckBox
             android:id="@+id/monkey"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingStart="@dimen/padding_size_2dp"
             android:text="@string/monkey"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/margin_size_16dp"
+            android:layout_marginRight="@dimen/margin_size_16dp"
+            android:layout_marginTop="@dimen/margin_size_16dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/_3_did_phoebe_carry_for_her_brother_two_babies"
-            android:textColor="#4f4f4f"
-            android:textSize="20sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_20sp" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
             android:orientation="vertical">
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
-                android:paddingLeft="2dp"
+                android:paddingStart="@dimen/padding_size_2dp"
                 android:text="@string/yes"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#4f4f4f"
-                android:textSize="16sp" />
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
                 android:id="@+id/answer_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
-                android:paddingLeft="2dp"
+                android:paddingStart="@dimen/padding_size_2dp"
                 android:text="@string/no"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#4f4f4f"
-                android:textSize="16sp" />
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_16sp" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/margin_size_16dp"
+            android:layout_marginRight="@dimen/margin_size_16dp"
+            android:layout_marginTop="@dimen/margin_size_16dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/_4_where_is_chandler_forced_to_work_after_falling_asleep_in_a_meeting"
-            android:textColor="#4f4f4f"
-            android:textSize="20sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_20sp" />
 
         <EditText
             android:id="@+id/name_of_town"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
             android:fontFamily="sans-serif-smallcaps"
             android:hint="@string/name_of_the_town"
             android:inputType="textMultiLine"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/margin_size_16dp"
+            android:layout_marginRight="@dimen/margin_size_16dp"
+            android:layout_marginTop="@dimen/margin_size_16dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/_5_which_of_the_friends_have_worked_in_the_coffee_shop"
-            android:textColor="#4f4f4f"
-            android:textSize="20sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_20sp" />
 
         <CheckBox
             android:id="@+id/chandler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingLeft="@dimen/padding_size_2dp"
             android:text="@string/chandler"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <CheckBox
             android:id="@+id/phoebe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingStart="@dimen/padding_size_2dp"
             android:text="@string/phoebe"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <CheckBox
             android:id="@+id/rachel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingStart="@dimen/padding_size_2dp"
             android:text="@string/rachel"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <CheckBox
             android:id="@+id/joey"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:paddingLeft="2dp"
+            android:paddingStart="@dimen/padding_size_2dp"
             android:text="@string/joey"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/margin_size_16dp"
+            android:layout_marginRight="@dimen/margin_size_16dp"
+            android:layout_marginTop="@dimen/margin_size_16dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/_6_what_is_chandler_s_middle_name"
-            android:textColor="#4f4f4f"
-            android:textSize="20sp" />
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_20sp" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/margin_size_35dp"
+            android:layout_marginRight="@dimen/margin_size_35dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
             android:orientation="vertical">
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
-                android:paddingLeft="2dp"
+                android:paddingStart="@dimen/padding_size_2dp"
                 android:text="@string/michael"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#4f4f4f"
-                android:textSize="16sp" />
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
-                android:paddingLeft="2dp"
+                android:paddingStart="@dimen/padding_size_2dp"
                 android:text="@string/matt"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#4f4f4f"
-                android:textSize="16sp" />
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
                 android:id="@+id/answer_muriel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
-                android:paddingLeft="2dp"
+                android:paddingStart="@dimen/padding_size_2dp"
                 android:text="@string/muriel"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#4f4f4f"
-                android:textSize="16sp" />
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_16sp" />
         </RadioGroup>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="35dp"
-            android:background="#590632"
+            android:layout_margin="@dimen/margin_size_35dp"
+            android:background="@color/background_button_color"
             android:fontFamily="sans-serif-smallcaps"
             android:onClick="result"
             android:text="@string/result"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#cdcdcd"
-            android:textSize="20sp" />
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/text_size_20sp" />
 
     </LinearLayout>
 
