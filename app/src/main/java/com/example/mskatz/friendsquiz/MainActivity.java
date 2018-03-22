@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Checks the user's response, sums up the result and displays a message containing the result
-     *
      */
     public void result(View view) {
         firstAnswer();
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Adds one point to general score
-     *
      */
     public void addPoint(int point) {
         score += 1;
@@ -54,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Changes the background color to green, for the correct answer
-     *
      */
     private void changeColorC(View v) {
         v.setBackgroundColor(Color.parseColor("#009900"));
@@ -73,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void firstAnswer() {
         EditText editText = findViewById(R.id.place_of_work);
-        if (editText.getText().toString().toUpperCase().equals(getString(R.string.central_perk))) {
+        if (editText.getText().toString().toUpperCase().replaceAll("\\s", "").equals(getString(R.string.central_perk))) {
             addPoint(score);
             changeColorC(editText);
         } else {
@@ -120,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void fourthAnswer() {
         EditText editText = findViewById(R.id.name_of_town);
-        if (editText.getText().toString().toUpperCase().equals(getString(R.string.tulsa))) {
+        if (editText.getText().toString().replaceAll("\\s", "").toUpperCase().equals(getString(R.string.tulsa))) {
             addPoint(score);
             changeColorC(editText);
         } else {
