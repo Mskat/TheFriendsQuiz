@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     //general value of a score
-    int score = 0;
+    private int score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
      * Checks the user's response, sums up the result and displays a message containing the result
      */
     public void result(View view) {
+
         firstAnswer();
         secondAnswer();
         thirdAnswer();
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds one point to general score
      */
-    public void addPoint(int point) {
+    private void addPoint(int point) {
         score += 1;
     }
 

@@ -28,8 +28,8 @@
             android:id="@+id/photo_image_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
             android:layout_margin="@dimen/margin_size_10dp"
+            android:adjustViewBounds="true"
             android:src="@drawable/friends" />
 
         <TextView
@@ -139,6 +139,7 @@
             android:orientation="vertical">
 
             <RadioButton
+                android:id="@+id/answer_yes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
@@ -268,6 +269,7 @@
             android:orientation="vertical">
 
             <RadioButton
+                android:id="@+id/answer_michael"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
@@ -278,6 +280,7 @@
                 android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
+                android:id="@+id/answer_matt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-smallcaps"
