@@ -1,7 +1,6 @@
 # TheFriendsQuiz
-An app created as part of the Google Developer Challenge Scholarship program: Android basics. Fourth app created based on the skills got during the scholarship.
 
-The application checks knowledge of a TV show "The Friends".
+The application checks knowledge of a TV show "The Friends" in the form of a quiz.
 
 ![layout-2018-02-06-183856_1](https://user-images.githubusercontent.com/33321088/35875040-6e909094-0b6e-11e8-9b9c-4cfd6d2069f7.png)
 
