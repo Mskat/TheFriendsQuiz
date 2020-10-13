@@ -1,4 +1,4 @@
-# TheFriendsQuiz
+# Friends Quiz
 
 The application checks knowledge of a TV show "The Friends" in the form of a quiz.
 
